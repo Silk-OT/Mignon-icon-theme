@@ -1,0 +1,23 @@
+NEUTRALS
+	Black:		#4E4F49
+	Gray:		#73736E
+	White:		#FBF5F5
+
+MAIN
+	Red:		#FC707B
+	Orange:		#FAA586
+	Yellow:		#FFE27C
+	Green:		#9BE9C2
+	Blue:		#99C0ED
+	Purple:		#CCAEEB
+	
+ADJACENT
+	Pink:		#FABACF
+	Bright Orange:	#F9C6A7
+	Bright Yellow:	#FAF5A6
+	Bright Green:	#ACF0D7
+	Bright Blue:	#CEDFF1
+	Bright Purple:	#DACCEF
+	Dark Red:	#D84F5F
+	Lime:		#E6F099
+	Brighter Blue:	#E7F0F7

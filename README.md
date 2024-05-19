@@ -22,6 +22,7 @@ Getting started with Mignon-Pastel is a breeze! Just follow these simple steps:
 I created it based on the [Tela-circle](https://github.com/vinceliuice/Tela-circle-icon-theme) icon theme by [vinceliuice](https://github.com/vinceliuice). Vince is, in my opinion, the best *Linuxer Designer* there is, his themes are gorgeous, and I wouldn't even be able to do the installation script and icon linkage if not by looking at his work.
 
 🎨 The theme has a very restricted palette, consisting of 6 main colors, 3 neutral colors, and 9 secondary colors that I used only for shading or when it was *extremelly necessary*.
+![Palette](palette.png)
 
 ## Contributing
 
