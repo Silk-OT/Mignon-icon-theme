@@ -1,10 +1,7 @@
 <svg width="64" height="64" version="1" xmlns="http://www.w3.org/2000/svg">
- <defs>
-  <style id="current-color-scheme" type="text/css">.ColorScheme-Text {
-        color:#333333;
-      }
-      .ColorScheme-Highlight {
-        color:#5294e2;
-      }</style>
- </defs>
-<circle cx="32" cy="32" r="27" fill="#ececec" style="paint-order:stroke fill markers"/><rect x="19" y="11" width="26" height="42" rx="3" ry="3" fill="#333"/><path d="M22 12c-1.108 0-2 .892-2 2v36c0 1.108.892 2 2 2h20c1.108 0 2-.892 2-2V14c0-1.108-.892-2-2-2h-4.33l-.688 1h-9.966l-.686-1H22z" class="ColorScheme-Highlight" fill="currentColor"/><path d="m28 21.152-.865.5 1.523 2.637A5 5 0 0 0 27 27.999h10a5 5 0 0 0-1.658-3.71l1.523-2.637-.865-.5-1.469 2.543A5 5 0 0 0 32 23a5 5 0 0 0-2.533.695zM29.5 26a.5.5 0 0 1 .5.5.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.5.5 0 0 1 .5-.5zm5 0a.5.5 0 0 1 .5.5.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.5.5 0 0 1 .5-.5zM25 29c-.554 0-1 .446-1 1v5c0 .554.446 1 1 1s1-.446 1-1v-5c0-.554-.446-1-1-1zm2 0v10h2v3c0 .554.446 1 1 1s1-.446 1-1v-3h2v3c0 .554.446 1 1 1s1-.446 1-1v-3h2V29zm12 0c-.554 0-1 .446-1 1v5c0 .554.446 1 1 1s1-.446 1-1v-5c0-.554-.446-1-1-1z" fill="#fff" style="paint-order:stroke fill markers"/></svg>
+ <rect x="13" width="38" height="64" rx="5" ry="5" fill="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" stroke-width="10.902" style="paint-order:stroke fill markers"/>
+ <rect x="15" y="2" width="34" height="60" rx="3" ry="3" fill="#5294e2" stroke-linecap="round" stroke-linejoin="round" stroke-width="9.9852" style="paint-order:stroke fill markers"/>
+ <circle cx="32" cy="4" r="1" fill="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" style="paint-order:stroke fill markers"/>
+ <rect x="23" y="59" width="18" height="1" rx=".5" ry=".5" fill="#ffffff" opacity=".5" stroke-linecap="round" stroke-linejoin="round" stroke-width="10.29" style="paint-order:stroke fill markers"/>
+ <path d="M27.86 15.418l-1.36.786 1.881 3.26C24.943 21.123 24.929 25 24.929 25H39.07s-.015-3.876-3.452-5.537l1.881-3.26-1.36-.785-2.034 3.523a9.502 9.502 0 0 0-2.103-.227c-.792 0-1.483.088-2.109.227zm1 6.44a.78.78 0 0 1 .783.782.79.79 0 0 1-.783.789.786.786 0 0 1 0-1.571zm6.286 0a.78.78 0 0 1 .783.782.79.79 0 0 1-.783.789.786.786 0 0 1 0-1.571zm6.352 3.925c-.904 0-1.64.833-1.64 1.86v7.276c0 1.026.736 1.864 1.64 1.864.903 0 1.502-.838 1.502-1.864v-7.277c0-1.027-.597-1.86-1.502-1.86m-16.57.001v13.358c0 .37.416.785.786.785h2.357v2.947c0 .978.623 1.768 1.572 1.768.943 0 1.603-.792 1.571-1.768v-2.946h1.572v2.946c0 .978.622 1.768 1.571 1.768.943 0 1.572-.803 1.572-1.768v-2.946h2.357c.37 0 .785-.415.785-.786V25.784zm-2.287 0c-.904 0-1.641.833-1.641 1.86v7.276c0 1.026.737 1.864 1.64 1.864.905 0 1.503-.838 1.503-1.864v-7.277c0-1.027-.597-1.86-1.502-1.86M21.918 25.059" fill="#fff"/>
+</svg>
