@@ -1,10 +1,7 @@
-<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
- <defs>
-  <style id="current-color-scheme" type="text/css">.ColorScheme-Text {
-        color:#333333;
-      }
-      .ColorScheme-Highlight {
-        color:#5294e2;
-      }</style>
- </defs>
-<circle cx="32" cy="32" r="27" fill="#ececec" style="paint-order:stroke fill markers"/><path d="M28.442 39c-.303 0-.442.213-.442.471v6.187l-2.462.212h-.013c-.303 0-.525.214-.525.471V47h14v-.659c0-.257-.222-.47-.525-.47h-.014l-2.46-.213V39.47c0-.258-.139-.471-.442-.471z" fill="#c4c7cc"/><rect x="15" y="18" width="34" height="22" rx="1" ry="1" fill="#2f3337"/><path d="M16 19h32v20H16z" class="ColorScheme-Highlight" fill="currentColor"/></svg>
+<svg width="64" height="64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(270.4 69.763)">
+  <path d="M-244.5-25.929c-.52 0-.9.378-.9.834v10.955l-4.078.377h-.022c-.52 0-.9.378-.9.834v1.166h24v-1.166c0-.456-.381-.834-.9-.834h-.024l-4.076-.377v-10.955c0-.456-.38-.834-.9-.834z" fill="#c4c7cc"/>
+  <rect x="-268.4" y="-63.763" width="60" height="40" rx="2" ry="2" fill="#2f3337"/>
+  <path d="m-265.4-60.763h54v34h-54z" fill="#5294e2" fill-rule="evenodd"/>
+ </g>
+</svg>
