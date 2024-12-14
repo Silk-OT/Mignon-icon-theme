@@ -1,4 +1,3 @@
-
 install_theme() {
 	local -r DEST_DIR="${HOME}/.local/share/icons"
 	local -r theme_color='#99C0ED'
