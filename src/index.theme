@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=Mignon pastel
 Comment=Flat pastel color theme
-Inherits=Mint-Y-Blue,hicolor,Adwaita,breeze
+Inherits=Mint-Y-Blue,hicolor,Adwaita,breeze,Yaru
 Example=folder
 
 # KDE/Plasma Stuff
