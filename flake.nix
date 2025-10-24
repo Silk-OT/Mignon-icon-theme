@@ -6,79 +6,65 @@
   kdePackages,
   hicolor-icon-theme,
   adwaita-icon-theme,
-  breeze-icons,
   mint-y-icons,
+  yaru-theme,
 }:
 
-stdenvNoCC.mkDerivation rec {
+stdenvNoCC.mkDerivation (finalAttr: {
   pname = "mignon-icon-theme";
-  version = "unstable-2025-09-05";
+  version = "0-unstable-2025-09-22";
 
   src = fetchFromGitHub {
     owner = "IgorFerreiraMoraes";
     repo = "Mignon-icon-theme";
-    rev = "5b065dba10b0fbaec6f8e65e604f3fca193c31a4";
-    hash = "sha256-Rtr6NFGVMgs1Oqu/XqHiqaWeGsuvFzdwd/kbqTntQUg=";
+    rev = "e2d3fe2f1a55817f0dd93cc91521cda15d1ca784";
+    hash = "sha256-JstZ8FtVQLz+wk2xHaskao7uuUxk+slJqqJn0FbqM6I=";
   };
 
-  nativeBuildInputs = [
-    gtk3
-  ];
-
   buildInputs = [
+    gtk3
     mint-y-icons
     hicolor-icon-theme
     adwaita-icon-theme
-    breeze-icons
+    kdePackages.breeze-icons
+    yaru-theme
   ];
 
-  propagatedBuildInputs = [ 
-    mint-y-icons
-    hicolor-icon-theme
-    adwaita-icon-theme
-    breeze-icons
-  ];
-
-  dontBuild = true;
-  dontWrapQtApps = true;
-  #dontCheckForBrokenSymlinks = true;
   dontDropIconThemeCache = true;
+  dontWrapQtApps = true;
 
   installPhase = ''
     runHook preInstall
-
     theme_name="Mignon-pastel"
     theme_color='#99C0ED'
     dest="$out/share/icons/$theme_name"
     mkdir -p "$dest"
 
-    cp -a ./src/index.theme "$dest/index.theme"
-    sed -i "s/%NAME%/''${theme_name//-/ }/g" "$dest/index.theme"
+    sed -i "s/%NAME%/''${theme_name//-/ }/g" "./src/index.theme"
+    cp -r ./src/index.theme "$dest/index.theme"
 
     mkdir -p "$dest/scalable"
-    cp -a ./src/scalable/{apps,devices,mimetypes} "$dest/scalable"
-    cp -a ./src/scalable/places "$dest/scalable/places"
 
-    sed -i "s/#5294e2/$theme_color/g" "$dest/scalable/apps/"*.svg "$dest/scalable/places/"default-*.svg
-    sed -i "/\ColorScheme-Highlight/s/currentColor/$theme_color/" "$dest/scalable/places/"default-*.svg
-    sed -i "/\ColorScheme-Background/s/currentColor/#ffffff/" "$dest/scalable/places/"default-*.svg
+    sed -i "s/#5294e2/$theme_color/g" "./src/scalable/apps/"*.svg "./src/scalable/places/"default-*.svg
+    sed -i "/\ColorScheme-Highlight/s/currentColor/$theme_color/" "./src/scalable/places/"default-*.svg
+    sed -i "/\ColorScheme-Background/s/currentColor/#ffffff/" "./src/scalable/places/"default-*.svg
 
-    cp -a links/scalable "$dest/"
+    cp -r ./src/scalable/{apps,devices,mimetypes} "$dest/scalable"
+    cp -r ./src/scalable/places "$dest/scalable/places"
+
+    cp -r links/scalable "$dest/"
 
     find "$dest" -xtype l -exec rm {} +
 
     ln -sr "$dest/scalable" "$dest/scalable@2x"
-
     runHook postInstall
   '';
 
-
-  meta = with lib; {
+  meta = {
     description = "Flat, Pastel, Cute Icons for Linux";
     homepage = "https://github.com/IgorFerreiraMoraes/Mignon-icon-theme";
     license = lib.licenses.gpl3Only;
-    maintainers = with maintainers; [ Silk-OT ];
-    mainProgram = "mignon-icon-theme";
-    platforms = platforms.linux;
+    maintainers = with lib.maintainers; [ Silk-OT ];
+    platforms = lib.platforms.all;
   };
-}
+})
