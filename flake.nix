@@ -12,7 +12,7 @@
 
 stdenvNoCC.mkDerivation (finalAttr: {
   pname = "mignon-icon-theme";
-  version = "0-unstable-2025-09-22";
+  version = "0-unstable-2025-10-24";
 
   src = fetchFromGitHub {
     owner = "IgorFerreiraMoraes";
