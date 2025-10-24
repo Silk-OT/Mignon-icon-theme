@@ -17,8 +17,8 @@ stdenvNoCC.mkDerivation (finalAttr: {
   src = fetchFromGitHub {
     owner = "IgorFerreiraMoraes";
     repo = "Mignon-icon-theme";
-    rev = "e2d3fe2f1a55817f0dd93cc91521cda15d1ca784";
-    hash = "sha256-JstZ8FtVQLz+wk2xHaskao7uuUxk+slJqqJn0FbqM6I=";
+    rev = "f377ad86b88582aaa0564f559ff2ab296d1d646e";
+    hash = "sha256-5Za0HaHjqtUNIa8HX1kUijNv5IKjEm/bxY1lXtrMi0I=";
   };
 
   buildInputs = [
