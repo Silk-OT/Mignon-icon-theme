@@ -20,6 +20,7 @@
       };
       in {
         default = mignon_pastel;
+        "mignon_pastel" = mignon_pastel;
       }
     );
   };
