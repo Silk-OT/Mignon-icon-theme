@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "icon_src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1759182799,
+        "narHash": "sha256-5Za0HaHjqtUNIa8HX1kUijNv5IKjEm/bxY1lXtrMi0I=",
+        "owner": "IgorFerreiraMoraes",
+        "repo": "Mignon-icon-theme",
+        "rev": "f377ad86b88582aaa0564f559ff2ab296d1d646e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "IgorFerreiraMoraes",
+        "repo": "Mignon-icon-theme",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1761880412,
+        "narHash": "sha256-QoJjGd4NstnyOG4mm4KXF+weBzA2AH/7gn1Pmpfcb0A=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "a7fc11be66bdfb5cdde611ee5ce381c183da8386",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "icon_src": "icon_src",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
