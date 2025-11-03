@@ -20,11 +20,7 @@
       };
       in {
         default = mignon_pastel;
-        "mignon-pastel" = mignon_pastel; # short attribute
       }
     );
-    # top-level export so you can do mignon.mignon-pastel directly
-    mignon-pastel = import nixpkgs { system = builtins.currentSystem; }
-      ./. // { mignon_src = inputs.icon_src; };
   };
 }
